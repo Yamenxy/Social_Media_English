@@ -134,34 +134,47 @@
 
 
         .logo {
-            width: 90px;
-            height: 90px;
+    width: 110px;
+    height: 110px;
 
-            margin: 0 auto 18px;
+    margin: 0 auto 18px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-            border-radius: 27px;
+    border-radius: 50%;
 
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(59, 130, 246, 0.35),
-                    rgba(139, 92, 246, 0.35)
-                );
+    padding: 4px;
 
-            border: 1px solid rgba(255,255,255,0.15);
+    background:
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #8b5cf6
+        );
 
-            box-shadow:
-                0 20px 45px rgba(0,0,0,0.35),
-                inset 0 0 30px rgba(255,255,255,0.05);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.35),
+        0 0 35px rgba(59,130,246,0.20);
 
-            font-size: 40px;
+    animation: floating 4s ease-in-out infinite;
 
-            animation: floating 4s ease-in-out infinite;
-        }
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    border: 3px solid #111827;
+}
 
 
         @keyframes floating {
@@ -578,14 +591,11 @@
 
 
             .logo {
+    width: 90px;
+    height: 90px;
 
-                width: 78px;
-                height: 78px;
-
-                border-radius: 23px;
-
-                font-size: 34px;
-            }
+    border-radius: 50%;
+}
 
 
             h1 {
@@ -649,6 +659,7 @@
             }
         }
 
+        
     </style>
 </head>
 
@@ -665,7 +676,7 @@
         <header class="header">
 
             <div class="logo">
-                🔗
+               <img src="images/teacher.jpg" alt="Shady Darwish">
             </div>
 
             <h1>
@@ -885,43 +896,6 @@
 
 
             <!-- =====================
-                 ENGLISH COURSE
-            ====================== -->
-
-            <div class="section-title">
-                <span>🌐 الكورسات</span>
-            </div>
-
-
-            <a
-                class="link-card english"
-                href="https://chat.whatsapp.com/BFDcypBBSvcH8f3RGyywRT"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <div class="icon">
-                    <i class="fa-solid fa-language"></i>
-                </div>
-
-                <div class="content">
-
-                    <div class="title">
-                        كورس اللغة الإنجليزية
-                    </div>
-
-                    <div class="description">
-                        انضم لجروب كورس اللغة الإنجليزية
-                    </div>
-
-                </div>
-
-                <i class="fa-solid fa-chevron-left arrow"></i>
-
-            </a>
-
-
-            <!-- =====================
                  SOCIAL MEDIA
             ====================== -->
 
@@ -930,27 +904,27 @@
             </div>
 
 
-            <!-- TIKTOK -->
+            <!-- YOUTUBE -->
 
             <a
-                class="link-card tiktok"
-                href="https://www.tiktok.com/@mr.shadydarwish?_t=ZS-8tAhLUv7SkS&_r=1"
+                class="link-card youtube"
+                href="https://youtube.com/@drshadydarwish?si=Lfwv3EckV5Y9Tes6"
                 target="_blank"
                 rel="noopener noreferrer"
             >
 
                 <div class="icon">
-                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
                 </div>
 
                 <div class="content">
 
                     <div class="title">
-                        تيك توك
+                        قناة اليوتيوب
                     </div>
 
                     <div class="description">
-                        تابع المحتوى على TikTok
+                        تابع الفيديوهات والمحتوى التعليمي
                     </div>
 
                 </div>
@@ -958,7 +932,6 @@
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
             </a>
-
 
             <!-- FACEBOOK -->
 
@@ -1020,27 +993,27 @@
             </a>
 
 
-            <!-- YOUTUBE -->
+            <!-- TIKTOK -->
 
             <a
-                class="link-card youtube"
-                href="https://youtube.com/@drshadydarwish?si=Lfwv3EckV5Y9Tes6"
+                class="link-card tiktok"
+                href="https://www.tiktok.com/@mr.shadydarwish?_t=ZS-8tAhLUv7SkS&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
             >
 
                 <div class="icon">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
                 </div>
 
                 <div class="content">
 
                     <div class="title">
-                        قناة اليوتيوب
+                        تيك توك
                     </div>
 
                     <div class="description">
-                        تابع الفيديوهات والمحتوى التعليمي
+                        تابع المحتوى على TikTok(التعليمية)
                     </div>
 
                 </div>
@@ -1048,6 +1021,50 @@
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
             </a>
+
+
+
+            
+
+
+            <!-- =====================
+                 ENGLISH COURSE
+            ====================== -->
+
+            <div class="section-title">
+                <span>🌐 الكورسات</span>
+            </div>
+
+
+            <a
+                class="link-card english"
+                href="https://chat.whatsapp.com/BFDcypBBSvcH8f3RGyywRT"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <div class="icon">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+
+                <div class="content">
+
+                    <div class="title">
+                        كورس اللغة الإنجليزية
+                    </div>
+
+                    <div class="description">
+                        انضم لجروب كورس اللغة الإنجليزية
+                    </div>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-left arrow"></i>
+
+            </a>
+
+
+
 
 
         </div>
