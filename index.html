@@ -41,9 +41,7 @@
 
         body {
             font-family: "Cairo", sans-serif;
-
             min-height: 100vh;
-
             color: white;
 
             background:
@@ -65,7 +63,6 @@
                 );
 
             padding: 40px 20px;
-
             overflow-x: hidden;
         }
 
@@ -77,36 +74,25 @@
         body::before,
         body::after {
             content: "";
-
             position: fixed;
-
             border-radius: 50%;
-
             filter: blur(90px);
-
             z-index: -1;
-
             pointer-events: none;
         }
-
 
         body::before {
             width: 280px;
             height: 280px;
-
             background: rgba(37, 99, 235, 0.22);
-
             top: -100px;
             left: -100px;
         }
 
-
         body::after {
             width: 320px;
             height: 320px;
-
             background: rgba(124, 58, 237, 0.20);
-
             right: -120px;
             bottom: -120px;
         }
@@ -119,7 +105,6 @@
         .container {
             width: 100%;
             max-width: 540px;
-
             margin: auto;
         }
 
@@ -130,7 +115,6 @@
 
         .header {
             text-align: center;
-
             margin-bottom: 35px;
         }
 
@@ -142,9 +126,7 @@
         .logo {
             width: 125px;
             height: 125px;
-
             margin: 0 auto 18px;
-
             padding: 4px;
 
             display: flex;
@@ -164,25 +146,17 @@
                 0 0 35px rgba(59, 130, 246, 0.20);
 
             animation: floating 4s ease-in-out infinite;
-
             overflow: hidden;
         }
-
 
         .logo img {
             width: 100%;
             height: 100%;
-
             display: block;
-
             border-radius: 50%;
-
             border: 3px solid #111827;
-
             object-fit: contain;
-
             object-position: center;
-
             transform: none;
         }
 
@@ -210,27 +184,19 @@
 
         h1 {
             font-size: 30px;
-
             font-weight: 800;
-
             margin-bottom: 7px;
         }
 
-
         .subtitle {
             color: #cbd5e1;
-
             font-size: 14px;
-
             line-height: 1.8;
         }
 
-
         .choose-text {
             color: #94a3b8;
-
             font-size: 13px;
-
             margin-top: 5px;
         }
 
@@ -241,9 +207,7 @@
 
         .links {
             display: flex;
-
             flex-direction: column;
-
             gap: 15px;
         }
 
@@ -256,26 +220,21 @@
             position: relative;
 
             display: flex;
-
             align-items: center;
 
             min-height: 80px;
-
             padding: 14px 18px;
 
             border-radius: 20px;
 
             background: rgba(255, 255, 255, 0.065);
-
             border: 1px solid rgba(255, 255, 255, 0.10);
 
             backdrop-filter: blur(18px);
             -webkit-backdrop-filter: blur(18px);
 
             text-decoration: none;
-
             color: white;
-
             overflow: hidden;
 
             transition:
@@ -317,13 +276,11 @@
             transform: translateY(-5px);
 
             background: rgba(255, 255, 255, 0.11);
-
             border-color: rgba(255, 255, 255, 0.22);
 
             box-shadow:
                 0 18px 40px rgba(0, 0, 0, 0.25);
         }
-
 
         .link-card:hover::before {
             transform: scale(2.2);
@@ -341,18 +298,15 @@
             flex-shrink: 0;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             border-radius: 16px;
 
             font-size: 23px;
-
             margin-left: 15px;
 
             background: rgba(255, 255, 255, 0.08);
-
             border: 1px solid rgba(255, 255, 255, 0.08);
 
             z-index: 1;
@@ -360,7 +314,6 @@
             transition:
                 transform 0.3s ease;
         }
-
 
         .link-card:hover .icon {
             transform: scale(1.08) rotate(-3deg);
@@ -373,31 +326,21 @@
 
         .content {
             flex: 1;
-
             text-align: right;
-
             z-index: 1;
-
             min-width: 0;
         }
 
-
         .title {
             font-size: 17px;
-
             font-weight: 700;
-
             margin-bottom: 3px;
-
             line-height: 1.6;
         }
 
-
         .description {
             font-size: 12px;
-
             color: #94a3b8;
-
             line-height: 1.6;
         }
 
@@ -408,9 +351,7 @@
 
         .arrow {
             font-size: 13px;
-
             color: #64748b;
-
             z-index: 1;
 
             transition:
@@ -420,10 +361,8 @@
             flex-shrink: 0;
         }
 
-
         .link-card:hover .arrow {
             transform: translateX(-6px);
-
             color: white;
         }
 
@@ -434,10 +373,8 @@
 
         .whatsapp .icon {
             background: rgba(34, 197, 94, 0.14);
-
             color: #4ade80;
         }
-
 
         .whatsapp:hover {
             border-color: rgba(34, 197, 94, 0.30);
@@ -450,10 +387,8 @@
 
         .youtube .icon {
             background: rgba(239, 68, 68, 0.14);
-
             color: #f87171;
         }
-
 
         .youtube:hover {
             border-color: rgba(239, 68, 68, 0.30);
@@ -466,10 +401,8 @@
 
         .facebook .icon {
             background: rgba(59, 130, 246, 0.14);
-
             color: #60a5fa;
         }
-
 
         .facebook:hover {
             border-color: rgba(59, 130, 246, 0.30);
@@ -482,10 +415,8 @@
 
         .tiktok .icon {
             background: rgba(236, 72, 153, 0.14);
-
             color: #f472b6;
         }
-
 
         .tiktok:hover {
             border-color: rgba(236, 72, 153, 0.30);
@@ -498,10 +429,8 @@
 
         .instagram .icon {
             background: rgba(236, 72, 153, 0.14);
-
             color: #f472b6;
         }
-
 
         .instagram:hover {
             border-color: rgba(236, 72, 153, 0.30);
@@ -514,10 +443,8 @@
 
         .english .icon {
             background: rgba(14, 165, 233, 0.14);
-
             color: #38bdf8;
         }
-
 
         .english:hover {
             border-color: rgba(14, 165, 233, 0.30);
@@ -539,13 +466,10 @@
                 );
         }
 
-
         .contact .icon {
             background: rgba(34, 197, 94, 0.16);
-
             color: #4ade80;
         }
-
 
         .contact:hover {
             border-color: rgba(34, 197, 94, 0.35);
@@ -561,42 +485,33 @@
 
         .section-title {
             display: flex;
-
             align-items: center;
-
             gap: 10px;
 
             margin: 12px 4px 2px;
 
             color: #cbd5e1;
-
             font-size: 13px;
-
             font-weight: 700;
         }
-
 
         .section-title::before {
             content: "";
 
             height: 1px;
-
             flex: 1;
 
             background: rgba(255, 255, 255, 0.10);
         }
 
-
         .section-title span {
             white-space: nowrap;
         }
-
 
         .section-title::after {
             content: "";
 
             height: 1px;
-
             flex: 1;
 
             background: rgba(255, 255, 255, 0.10);
@@ -609,13 +524,10 @@
 
         .social-message {
             display: flex;
-
             align-items: center;
-
             gap: 13px;
 
             margin: 10px 2px 5px;
-
             padding: 14px 16px;
 
             border-radius: 18px;
@@ -633,7 +545,6 @@
                 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
-
         .message-icon {
             width: 42px;
             height: 42px;
@@ -641,43 +552,32 @@
             flex-shrink: 0;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             border-radius: 13px;
 
             background: rgba(59, 130, 246, 0.14);
-
             color: #60a5fa;
 
             font-size: 18px;
         }
 
-
         .message-content {
             flex: 1;
         }
 
-
         .message-title {
             color: #e2e8f0;
-
             font-size: 13px;
-
             font-weight: 700;
-
             line-height: 1.7;
         }
 
-
         .message-description {
             color: #94a3b8;
-
             font-size: 11px;
-
             margin-top: 2px;
-
             line-height: 1.7;
         }
 
@@ -688,7 +588,6 @@
 
         .modal-overlay {
             position: fixed;
-
             inset: 0;
 
             background: rgba(0, 0, 0, 0.65);
@@ -697,16 +596,13 @@
             -webkit-backdrop-filter: blur(8px);
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             padding: 20px;
 
             opacity: 0;
-
             visibility: hidden;
-
             pointer-events: none;
 
             transition: all 0.3s ease;
@@ -714,19 +610,19 @@
             z-index: 9999;
         }
 
-
         .modal-overlay.active {
             opacity: 1;
-
             visibility: visible;
-
             pointer-events: auto;
         }
 
 
+        /* =========================
+           MODAL
+        ========================= */
+
         .confirm-modal {
             width: 100%;
-
             max-width: 400px;
 
             background:
@@ -753,11 +649,14 @@
             transition: transform 0.3s ease;
         }
 
-
         .modal-overlay.active .confirm-modal {
             transform: scale(1) translateY(0);
         }
 
+
+        /* =========================
+           MODAL ICON
+        ========================= */
 
         .modal-icon {
             width: 65px;
@@ -766,14 +665,12 @@
             margin: 0 auto 18px;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             border-radius: 20px;
 
             background: rgba(34, 197, 94, 0.14);
-
             color: #4ade80;
 
             font-size: 30px;
@@ -782,48 +679,49 @@
         }
 
 
+        /* =========================
+           MODAL TITLE
+        ========================= */
+
         .modal-title {
             color: white;
-
             font-size: 21px;
-
             font-weight: 800;
-
             margin-bottom: 10px;
         }
 
 
+        /* =========================
+           MODAL TEXT
+        ========================= */
+
         .modal-text {
             color: #cbd5e1;
-
             font-size: 13px;
-
             line-height: 1.9;
-
             margin-bottom: 24px;
         }
 
 
+        /* =========================
+           MODAL BUTTONS
+        ========================= */
+
         .modal-buttons {
             display: flex;
-
             gap: 10px;
         }
-
 
         .modal-button {
             flex: 1;
 
             border: none;
-
             border-radius: 14px;
 
             padding: 13px 10px;
 
             font-family: "Cairo", sans-serif;
-
             font-size: 13px;
-
             font-weight: 700;
 
             cursor: pointer;
@@ -833,30 +731,24 @@
                 opacity 0.2s ease;
         }
 
-
         .modal-button:hover {
             transform: translateY(-2px);
         }
-
 
         .modal-button:active {
             transform: scale(0.97);
         }
 
-
         .confirm-button {
             background: #22c55e;
-
             color: white;
 
             box-shadow:
                 0 8px 20px rgba(34, 197, 94, 0.20);
         }
 
-
         .cancel-button {
             background: rgba(255, 255, 255, 0.08);
-
             color: #cbd5e1;
 
             border: 1px solid rgba(255, 255, 255, 0.10);
@@ -873,7 +765,6 @@
             margin-top: 35px;
 
             color: #64748b;
-
             font-size: 12px;
 
             padding-bottom: 10px;
@@ -890,135 +781,103 @@
                 padding: 30px 14px;
             }
 
-
             .header {
                 margin-bottom: 28px;
             }
-
 
             .logo {
                 width: 105px;
                 height: 105px;
             }
 
-
             h1 {
                 font-size: 25px;
-
                 line-height: 1.5;
             }
-
 
             .subtitle {
                 font-size: 13px;
             }
 
-
             .choose-text {
                 font-size: 12px;
             }
 
-
             .link-card {
                 min-height: 72px;
-
                 padding: 11px 13px;
-
                 border-radius: 17px;
             }
-
 
             .icon {
                 width: 46px;
                 height: 46px;
 
                 border-radius: 14px;
-
                 font-size: 20px;
 
                 margin-left: 12px;
             }
 
-
             .title {
                 font-size: 15px;
             }
-
 
             .description {
                 font-size: 10.5px;
             }
 
-
             .arrow {
                 font-size: 11px;
             }
 
-
             .section-title {
                 font-size: 12px;
-
                 margin-top: 8px;
             }
 
-
             .social-message {
                 padding: 12px 13px;
-
                 gap: 10px;
-
                 border-radius: 16px;
             }
-
 
             .message-icon {
                 width: 38px;
                 height: 38px;
-
                 border-radius: 11px;
-
                 font-size: 16px;
             }
-
 
             .message-title {
                 font-size: 11.5px;
             }
 
-
             .message-description {
                 font-size: 10px;
             }
 
-
             .confirm-modal {
                 padding: 24px 18px;
-
                 border-radius: 21px;
             }
-
 
             .modal-icon {
                 width: 58px;
                 height: 58px;
-
                 font-size: 26px;
             }
-
 
             .modal-title {
                 font-size: 19px;
             }
 
-
             .modal-text {
                 font-size: 12px;
             }
 
-
             .modal-button {
                 font-size: 12px;
-
                 padding: 12px 8px;
             }
         }
@@ -1171,7 +1030,7 @@
                     </div>
 
                     <div class="description">
-                        انضم لجروب سنة تالتة إعدادي
+                        انضم لجروب تالتة إعدادي
                     </div>
 
                 </div>
@@ -1555,15 +1414,25 @@
                 </div>
 
 
-                <div class="modal-title">
-                    الانضمام إلى جروب واتساب؟
+                <!--
+                    سيتم تغيير العنوان تلقائياً
+                    حسب الجروب الذي تم الضغط عليه
+                -->
+
+                <div class="modal-title" id="modalTitle">
+                    الدخول جروب واتس ؟!
                 </div>
 
 
-                <div class="modal-text">
-                    سيتم فتح جروب الواتساب في صفحة جديدة.
+                <!--
+                    سيتم تغيير الرسالة تلقائياً
+                    حسب اسم الجروب
+                -->
+
+                <div class="modal-text" id="modalText">
+                    لو متأكد إنك عايز تدخل الجروب اضغط نعم
                     <br>
-                    هل تريد المتابعة والانضمام إلى الجروب؟
+                    لو مش عايز تدخل وعايز جروب آخر اضغط إلغاء
                 </div>
 
 
@@ -1601,7 +1470,6 @@
             جميع الروابط التعليمية في مكان واحد
         </footer>
 
-
     </div>
 
 
@@ -1620,12 +1488,32 @@
         const cancelWhatsApp =
             document.getElementById("cancelWhatsApp");
 
+        const modalTitle =
+            document.getElementById("modalTitle");
 
+        const modalText =
+            document.getElementById("modalText");
+
+
+        /*
+         * الرابط الذي ضغط عليه المستخدم
+         */
         let selectedWhatsAppLink = null;
 
 
         /*
+         * اسم الجروب الحالي
+         */
+        let selectedGroupName = null;
+
+
+        /*
          * Detect all WhatsApp group links
+         *
+         * أي رابط يحتوي على:
+         * chat.whatsapp.com
+         *
+         * سيتم إظهار رسالة التأكيد له
          */
         document
             .querySelectorAll('a[href*="chat.whatsapp.com"]')
@@ -1634,19 +1522,95 @@
                 link.addEventListener("click", function (event) {
 
                     /*
-                     * Prevent the link from opening immediately
+                     * منع فتح WhatsApp مباشرة
                      */
                     event.preventDefault();
 
 
                     /*
-                     * Save the clicked WhatsApp URL
+                     * حفظ رابط الجروب
                      */
                     selectedWhatsAppLink = this.href;
 
 
                     /*
-                     * Show confirmation popup
+                     * الحصول على اسم الجروب
+                     *
+                     * مثال:
+                     *
+                     * واتساب — أولى إعدادي
+                     *
+                     * تصبح:
+                     *
+                     * أولى إعدادي
+                     */
+                    const titleElement =
+                        this.querySelector(".title");
+
+
+                    let groupName = "هذا الجروب";
+
+
+                    if (titleElement) {
+
+                        const fullTitle =
+                            titleElement.textContent.trim();
+
+
+                        if (fullTitle.includes("—")) {
+
+                            groupName =
+                                fullTitle
+                                    .split("—")
+                                    .slice(1)
+                                    .join("—")
+                                    .trim();
+
+                        } else {
+
+                            groupName = fullTitle;
+
+                        }
+
+                    }
+
+
+                    /*
+                     * حفظ اسم الجروب
+                     */
+                    selectedGroupName = groupName;
+
+
+                    /*
+                     * تغيير عنوان الرسالة
+                     *
+                     * مثال:
+                     *
+                     * الدخول جروب واتس أولى إعدادي ؟!
+                     */
+                    modalTitle.textContent =
+                        `الدخول جروب واتس ${groupName} ؟!`;
+
+
+                    /*
+                     * تغيير نص الرسالة
+                     *
+                     * مثال:
+                     *
+                     * لو متأكد إنك عايز تدخل جروب أولى إعدادي
+                     * اضغط نعم
+                     *
+                     * لو مش عايز تدخل وعايز جروب آخر
+                     * اضغط إلغاء
+                     */
+                    modalText.innerHTML =
+                        `لو متأكد إنك عايز تدخل جروب ${groupName} اضغط نعم
+                        <br>
+                        لو مش عايز تدخل وعايز جروب آخر اضغط إلغاء`;
+
+
+                    /*
+                     * إظهار الـ Modal
                      */
                     whatsappModal.classList.add("active");
 
@@ -1656,8 +1620,14 @@
 
 
         /*
-         * YES - Open WhatsApp group
+         * =========================
+         * YES BUTTON
+         * =========================
+         *
+         * عند الضغط على "نعم، انضم"
+         * يتم فتح الجروب الذي اختاره المستخدم
          */
+
         confirmWhatsApp.addEventListener("click", function () {
 
             if (selectedWhatsAppLink) {
@@ -1670,15 +1640,20 @@
 
             }
 
-
             closeWhatsAppModal();
 
         });
 
 
         /*
-         * NO - Cancel
+         * =========================
+         * CANCEL BUTTON
+         * =========================
+         *
+         * عند الضغط على "إلغاء"
+         * لن يتم فتح أي جروب
          */
+
         cancelWhatsApp.addEventListener("click", function () {
 
             closeWhatsAppModal();
@@ -1687,8 +1662,14 @@
 
 
         /*
-         * Close when clicking outside the popup
+         * =========================
+         * CLICK OUTSIDE MODAL
+         * =========================
+         *
+         * لو ضغط المستخدم خارج الرسالة
+         * يتم إغلاقها
          */
+
         whatsappModal.addEventListener("click", function (event) {
 
             if (event.target === whatsappModal) {
@@ -1701,8 +1682,13 @@
 
 
         /*
-         * Close with ESC key
+         * =========================
+         * ESC KEY
+         * =========================
+         *
+         * الضغط على زر ESC يغلق الرسالة
          */
+
         document.addEventListener("keydown", function (event) {
 
             if (event.key === "Escape") {
@@ -1715,13 +1701,18 @@
 
 
         /*
-         * Close modal function
+         * =========================
+         * CLOSE MODAL
+         * =========================
          */
+
         function closeWhatsAppModal() {
 
             whatsappModal.classList.remove("active");
 
             selectedWhatsAppLink = null;
+
+            selectedGroupName = null;
 
         }
 
