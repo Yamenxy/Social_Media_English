@@ -89,6 +89,7 @@
             pointer-events: none;
         }
 
+
         body::before {
             width: 280px;
             height: 280px;
@@ -98,6 +99,7 @@
             top: -100px;
             left: -100px;
         }
+
 
         body::after {
             width: 320px;
@@ -138,58 +140,52 @@
         ========================= */
 
         .logo {
-    width: 125px;
-    height: 125px;
+            width: 125px;
+            height: 125px;
 
-    margin: 0 auto 18px;
+            margin: 0 auto 18px;
 
-    padding: 4px;
+            padding: 4px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    border-radius: 50%;
+            border-radius: 50%;
 
-    background: linear-gradient(
-        135deg,
-        #3b82f6,
-        #8b5cf6
-    );
+            background: linear-gradient(
+                135deg,
+                #3b82f6,
+                #8b5cf6
+            );
 
-    box-shadow:
-        0 20px 45px rgba(0, 0, 0, 0.35),
-        0 0 35px rgba(59, 130, 246, 0.20);
+            box-shadow:
+                0 20px 45px rgba(0, 0, 0, 0.35),
+                0 0 35px rgba(59, 130, 246, 0.20);
 
-    animation: floating 4s ease-in-out infinite;
+            animation: floating 4s ease-in-out infinite;
 
-    overflow: hidden;
-}
+            overflow: hidden;
+        }
 
-.logo img {
-    width: 100%;
-    height: 100%;
 
-    display: block;
+        .logo img {
+            width: 100%;
+            height: 100%;
 
-    border-radius: 50%;
+            display: block;
 
-    border: 3px solid #111827;
+            border-radius: 50%;
 
-    /*
-     * IMPORTANT:
-     * contain = show the COMPLETE image
-     * cover = crop the image
-     */
-    object-fit: contain;
+            border: 3px solid #111827;
 
-    object-position: center;
+            object-fit: contain;
 
-    /*
-     * Do NOT zoom the image
-     */
-    transform: none;
-}
+            object-position: center;
+
+            transform: none;
+        }
+
 
         /* =========================
            FLOATING ANIMATION
@@ -257,7 +253,6 @@
         ========================= */
 
         .link-card {
-
             position: relative;
 
             display: flex;
@@ -296,7 +291,6 @@
         ========================= */
 
         .link-card::before {
-
             content: "";
 
             position: absolute;
@@ -320,7 +314,6 @@
         ========================= */
 
         .link-card:hover {
-
             transform: translateY(-5px);
 
             background: rgba(255, 255, 255, 0.11);
@@ -333,7 +326,6 @@
 
 
         .link-card:hover::before {
-
             transform: scale(2.2);
         }
 
@@ -343,7 +335,6 @@
         ========================= */
 
         .icon {
-
             width: 52px;
             height: 52px;
 
@@ -372,7 +363,6 @@
 
 
         .link-card:hover .icon {
-
             transform: scale(1.08) rotate(-3deg);
         }
 
@@ -382,7 +372,6 @@
         ========================= */
 
         .content {
-
             flex: 1;
 
             text-align: right;
@@ -394,7 +383,6 @@
 
 
         .title {
-
             font-size: 17px;
 
             font-weight: 700;
@@ -406,7 +394,6 @@
 
 
         .description {
-
             font-size: 12px;
 
             color: #94a3b8;
@@ -420,7 +407,6 @@
         ========================= */
 
         .arrow {
-
             font-size: 13px;
 
             color: #64748b;
@@ -436,7 +422,6 @@
 
 
         .link-card:hover .arrow {
-
             transform: translateX(-6px);
 
             color: white;
@@ -448,7 +433,6 @@
         ========================= */
 
         .whatsapp .icon {
-
             background: rgba(34, 197, 94, 0.14);
 
             color: #4ade80;
@@ -456,7 +440,6 @@
 
 
         .whatsapp:hover {
-
             border-color: rgba(34, 197, 94, 0.30);
         }
 
@@ -466,7 +449,6 @@
         ========================= */
 
         .youtube .icon {
-
             background: rgba(239, 68, 68, 0.14);
 
             color: #f87171;
@@ -474,7 +456,6 @@
 
 
         .youtube:hover {
-
             border-color: rgba(239, 68, 68, 0.30);
         }
 
@@ -484,7 +465,6 @@
         ========================= */
 
         .facebook .icon {
-
             background: rgba(59, 130, 246, 0.14);
 
             color: #60a5fa;
@@ -492,7 +472,6 @@
 
 
         .facebook:hover {
-
             border-color: rgba(59, 130, 246, 0.30);
         }
 
@@ -502,7 +481,6 @@
         ========================= */
 
         .tiktok .icon {
-
             background: rgba(236, 72, 153, 0.14);
 
             color: #f472b6;
@@ -510,7 +488,6 @@
 
 
         .tiktok:hover {
-
             border-color: rgba(236, 72, 153, 0.30);
         }
 
@@ -520,7 +497,6 @@
         ========================= */
 
         .instagram .icon {
-
             background: rgba(236, 72, 153, 0.14);
 
             color: #f472b6;
@@ -528,7 +504,6 @@
 
 
         .instagram:hover {
-
             border-color: rgba(236, 72, 153, 0.30);
         }
 
@@ -538,7 +513,6 @@
         ========================= */
 
         .english .icon {
-
             background: rgba(14, 165, 233, 0.14);
 
             color: #38bdf8;
@@ -546,7 +520,6 @@
 
 
         .english:hover {
-
             border-color: rgba(14, 165, 233, 0.30);
         }
 
@@ -556,7 +529,6 @@
         ========================= */
 
         .contact {
-
             margin-top: 5px;
 
             background:
@@ -569,7 +541,6 @@
 
 
         .contact .icon {
-
             background: rgba(34, 197, 94, 0.16);
 
             color: #4ade80;
@@ -577,7 +548,6 @@
 
 
         .contact:hover {
-
             border-color: rgba(34, 197, 94, 0.35);
 
             box-shadow:
@@ -590,7 +560,6 @@
         ========================= */
 
         .section-title {
-
             display: flex;
 
             align-items: center;
@@ -608,7 +577,6 @@
 
 
         .section-title::before {
-
             content: "";
 
             height: 1px;
@@ -620,13 +588,11 @@
 
 
         .section-title span {
-
             white-space: nowrap;
         }
 
 
         .section-title::after {
-
             content: "";
 
             height: 1px;
@@ -642,7 +608,6 @@
         ========================= */
 
         .social-message {
-
             display: flex;
 
             align-items: center;
@@ -670,7 +635,6 @@
 
 
         .message-icon {
-
             width: 42px;
             height: 42px;
 
@@ -692,13 +656,11 @@
 
 
         .message-content {
-
             flex: 1;
         }
 
 
         .message-title {
-
             color: #e2e8f0;
 
             font-size: 13px;
@@ -710,7 +672,6 @@
 
 
         .message-description {
-
             color: #94a3b8;
 
             font-size: 11px;
@@ -722,11 +683,191 @@
 
 
         /* =========================
+           WHATSAPP CONFIRMATION MODAL
+        ========================= */
+
+        .modal-overlay {
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            pointer-events: none;
+
+            transition: all 0.3s ease;
+
+            z-index: 9999;
+        }
+
+
+        .modal-overlay.active {
+            opacity: 1;
+
+            visibility: visible;
+
+            pointer-events: auto;
+        }
+
+
+        .confirm-modal {
+            width: 100%;
+
+            max-width: 400px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(30, 41, 59, 0.98),
+                    rgba(15, 23, 42, 0.98)
+                );
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            border-radius: 24px;
+
+            padding: 28px 24px;
+
+            text-align: center;
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.45),
+                0 0 40px rgba(34, 197, 94, 0.08);
+
+            transform: scale(0.9) translateY(15px);
+
+            transition: transform 0.3s ease;
+        }
+
+
+        .modal-overlay.active .confirm-modal {
+            transform: scale(1) translateY(0);
+        }
+
+
+        .modal-icon {
+            width: 65px;
+            height: 65px;
+
+            margin: 0 auto 18px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            background: rgba(34, 197, 94, 0.14);
+
+            color: #4ade80;
+
+            font-size: 30px;
+
+            border: 1px solid rgba(34, 197, 94, 0.18);
+        }
+
+
+        .modal-title {
+            color: white;
+
+            font-size: 21px;
+
+            font-weight: 800;
+
+            margin-bottom: 10px;
+        }
+
+
+        .modal-text {
+            color: #cbd5e1;
+
+            font-size: 13px;
+
+            line-height: 1.9;
+
+            margin-bottom: 24px;
+        }
+
+
+        .modal-buttons {
+            display: flex;
+
+            gap: 10px;
+        }
+
+
+        .modal-button {
+            flex: 1;
+
+            border: none;
+
+            border-radius: 14px;
+
+            padding: 13px 10px;
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.2s ease,
+                opacity 0.2s ease;
+        }
+
+
+        .modal-button:hover {
+            transform: translateY(-2px);
+        }
+
+
+        .modal-button:active {
+            transform: scale(0.97);
+        }
+
+
+        .confirm-button {
+            background: #22c55e;
+
+            color: white;
+
+            box-shadow:
+                0 8px 20px rgba(34, 197, 94, 0.20);
+        }
+
+
+        .cancel-button {
+            background: rgba(255, 255, 255, 0.08);
+
+            color: #cbd5e1;
+
+            border: 1px solid rgba(255, 255, 255, 0.10);
+        }
+
+
+        /* =========================
            FOOTER
         ========================= */
 
         footer {
-
             text-align: center;
 
             margin-top: 35px;
@@ -746,27 +887,22 @@
         @media (max-width: 480px) {
 
             body {
-
                 padding: 30px 14px;
             }
 
 
             .header {
-
                 margin-bottom: 28px;
             }
 
 
-            @media (max-width: 480px) {
-    .logo {
-        width: 105px;
-        height: 105px;
-    }
-}
+            .logo {
+                width: 105px;
+                height: 105px;
+            }
 
 
             h1 {
-
                 font-size: 25px;
 
                 line-height: 1.5;
@@ -774,19 +910,16 @@
 
 
             .subtitle {
-
                 font-size: 13px;
             }
 
 
             .choose-text {
-
                 font-size: 12px;
             }
 
 
             .link-card {
-
                 min-height: 72px;
 
                 padding: 11px 13px;
@@ -796,7 +929,6 @@
 
 
             .icon {
-
                 width: 46px;
                 height: 46px;
 
@@ -809,25 +941,21 @@
 
 
             .title {
-
                 font-size: 15px;
             }
 
 
             .description {
-
                 font-size: 10.5px;
             }
 
 
             .arrow {
-
                 font-size: 11px;
             }
 
 
             .section-title {
-
                 font-size: 12px;
 
                 margin-top: 8px;
@@ -835,7 +963,6 @@
 
 
             .social-message {
-
                 padding: 12px 13px;
 
                 gap: 10px;
@@ -845,7 +972,6 @@
 
 
             .message-icon {
-
                 width: 38px;
                 height: 38px;
 
@@ -856,18 +982,49 @@
 
 
             .message-title {
-
                 font-size: 11.5px;
             }
 
 
             .message-description {
-
                 font-size: 10px;
+            }
+
+
+            .confirm-modal {
+                padding: 24px 18px;
+
+                border-radius: 21px;
+            }
+
+
+            .modal-icon {
+                width: 58px;
+                height: 58px;
+
+                font-size: 26px;
+            }
+
+
+            .modal-title {
+                font-size: 19px;
+            }
+
+
+            .modal-text {
+                font-size: 12px;
+            }
+
+
+            .modal-button {
+                font-size: 12px;
+
+                padding: 12px 8px;
             }
         }
 
     </style>
+
 </head>
 
 
@@ -883,19 +1040,24 @@
         <header class="header">
 
             <div class="logo">
+
                 <img
                     src="images/teacher.jpg"
                     alt="دكتور شادي درويش"
                 >
+
             </div>
+
 
             <h1>
                 روابط دكتور شادي درويش
             </h1>
 
+
             <p class="subtitle">
                 خبير اللغة الإنجليزية و صانع الأوائل
             </p>
+
 
             <p class="choose-text">
                 اختر المرحلة المطلوبة فقط
@@ -916,7 +1078,11 @@
             ====================== -->
 
             <div class="section-title">
-                <span>📚 المرحلة الإعدادية</span>
+
+                <span>
+                    📚 المرحلة الإعدادية
+                </span>
+
             </div>
 
 
@@ -933,6 +1099,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -944,6 +1111,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -963,6 +1131,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -974,6 +1143,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -993,6 +1163,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1005,6 +1176,7 @@
 
                 </div>
 
+
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
             </a>
@@ -1015,7 +1187,11 @@
             ====================== -->
 
             <div class="section-title">
-                <span>🎓 المرحلة الثانوية</span>
+
+                <span>
+                    🎓 المرحلة الثانوية
+                </span>
+
             </div>
 
 
@@ -1032,6 +1208,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1043,6 +1220,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1062,6 +1240,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1073,6 +1252,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1092,6 +1272,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1099,10 +1280,11 @@
                     </div>
 
                     <div class="description">
-                        انضم لجروب سنة تالتة ثانوي
+                        انضم لجروب تالتة ثانوي
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1116,14 +1298,18 @@
             <div class="social-message">
 
                 <div class="message-icon">
+
                     <i class="fa-solid fa-bell"></i>
+
                 </div>
+
 
                 <div class="message-content">
 
                     <div class="message-title">
                         ضروري جدا الاشتراك في كل القنوات التعليمية
                     </div>
+
 
                     <div class="message-description">
                         عشان بنزل عليها فيديوهات شرح و مراجعة
@@ -1139,7 +1325,11 @@
             ====================== -->
 
             <div class="section-title">
-                <span>📱 تابعنا على السوشيال ميديا</span>
+
+                <span>
+                    📱 تابعنا على السوشيال ميديا
+                </span>
+
             </div>
 
 
@@ -1156,6 +1346,7 @@
                     <i class="fa-brands fa-youtube"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1167,6 +1358,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1186,6 +1378,7 @@
                     <i class="fa-brands fa-facebook-f"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1197,6 +1390,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1216,6 +1410,7 @@
                     <i class="fa-brands fa-instagram"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1227,6 +1422,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1246,6 +1442,7 @@
                     <i class="fa-brands fa-tiktok"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1258,6 +1455,7 @@
 
                 </div>
 
+
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
             </a>
@@ -1268,7 +1466,11 @@
             ====================== -->
 
             <div class="section-title">
-                <span>🌐 الكورسات</span>
+
+                <span>
+                    🌐 الكورسات
+                </span>
+
             </div>
 
 
@@ -1285,6 +1487,7 @@
                     <i class="fa-solid fa-language"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1296,6 +1499,7 @@
                     </div>
 
                 </div>
+
 
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
@@ -1317,6 +1521,7 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </div>
 
+
                 <div class="content">
 
                     <div class="title">
@@ -1329,10 +1534,61 @@
 
                 </div>
 
+
                 <i class="fa-solid fa-chevron-left arrow"></i>
 
             </a>
 
+        </div>
+
+
+        <!-- =========================
+             WHATSAPP CONFIRMATION MODAL
+        ========================== -->
+
+        <div class="modal-overlay" id="whatsappModal">
+
+            <div class="confirm-modal">
+
+                <div class="modal-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+
+                <div class="modal-title">
+                    الانضمام إلى جروب واتساب؟
+                </div>
+
+
+                <div class="modal-text">
+                    سيتم فتح جروب الواتساب في صفحة جديدة.
+                    <br>
+                    هل تريد المتابعة والانضمام إلى الجروب؟
+                </div>
+
+
+                <div class="modal-buttons">
+
+                    <button
+                        type="button"
+                        class="modal-button confirm-button"
+                        id="confirmWhatsApp"
+                    >
+                        نعم، انضم
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="modal-button cancel-button"
+                        id="cancelWhatsApp"
+                    >
+                        إلغاء
+                    </button>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -1348,7 +1604,129 @@
 
     </div>
 
+
+    <!-- =========================
+         WHATSAPP CONFIRMATION SCRIPT
+    ========================== -->
+
+    <script>
+
+        const whatsappModal =
+            document.getElementById("whatsappModal");
+
+        const confirmWhatsApp =
+            document.getElementById("confirmWhatsApp");
+
+        const cancelWhatsApp =
+            document.getElementById("cancelWhatsApp");
+
+
+        let selectedWhatsAppLink = null;
+
+
+        /*
+         * Detect all WhatsApp group links
+         */
+        document
+            .querySelectorAll('a[href*="chat.whatsapp.com"]')
+            .forEach(link => {
+
+                link.addEventListener("click", function (event) {
+
+                    /*
+                     * Prevent the link from opening immediately
+                     */
+                    event.preventDefault();
+
+
+                    /*
+                     * Save the clicked WhatsApp URL
+                     */
+                    selectedWhatsAppLink = this.href;
+
+
+                    /*
+                     * Show confirmation popup
+                     */
+                    whatsappModal.classList.add("active");
+
+                });
+
+            });
+
+
+        /*
+         * YES - Open WhatsApp group
+         */
+        confirmWhatsApp.addEventListener("click", function () {
+
+            if (selectedWhatsAppLink) {
+
+                window.open(
+                    selectedWhatsAppLink,
+                    "_blank",
+                    "noopener,noreferrer"
+                );
+
+            }
+
+
+            closeWhatsAppModal();
+
+        });
+
+
+        /*
+         * NO - Cancel
+         */
+        cancelWhatsApp.addEventListener("click", function () {
+
+            closeWhatsAppModal();
+
+        });
+
+
+        /*
+         * Close when clicking outside the popup
+         */
+        whatsappModal.addEventListener("click", function (event) {
+
+            if (event.target === whatsappModal) {
+
+                closeWhatsAppModal();
+
+            }
+
+        });
+
+
+        /*
+         * Close with ESC key
+         */
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+
+                closeWhatsAppModal();
+
+            }
+
+        });
+
+
+        /*
+         * Close modal function
+         */
+        function closeWhatsAppModal() {
+
+            whatsappModal.classList.remove("active");
+
+            selectedWhatsAppLink = null;
+
+        }
+
+    </script>
+
 </body>
 
 </html>
-
